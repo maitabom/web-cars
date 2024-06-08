@@ -26,9 +26,7 @@ function AuthProvider({ children }: AuthProviderProps) {
 
       setLoadingAuth(false);
 
-      return () => {
-        unsub();
-      };
+      unsub();
     });
   });
 
