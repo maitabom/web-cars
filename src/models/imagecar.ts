@@ -1,7 +1,7 @@
 interface ImageCar {
   uid: string;
   name: string;
-  previewUrl: string;
+  previewUrl?: string;
   url: string;
 }
 
