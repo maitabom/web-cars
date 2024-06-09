@@ -28,7 +28,7 @@ function AuthProvider({ children }: AuthProviderProps) {
 
       unsub();
     });
-  });
+  }, []);
 
   function handleInfoUser(user: User) {
     setUser({

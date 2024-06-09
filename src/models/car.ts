@@ -8,6 +8,8 @@ interface Car {
   price: number;
   city: string;
   mileage: number;
+  description?: string;
+  owner?: string
   images: ImageCar[];
 }
 

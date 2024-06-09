@@ -35,7 +35,7 @@ function Home() {
     }
 
     loadCars();
-  });
+  }, []);
 
   function handleImageLoad(car: Car) {
     setLoadImages((prevLoadImages) => [...prevLoadImages, car.id]);

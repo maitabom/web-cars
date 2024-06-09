@@ -30,7 +30,7 @@ function Register() {
 
   useEffect(() => {
     signOut(auth);
-  });
+  }, []);
 
   async function submitForm(data: FormDataRegister) {
     await createUserWithEmailAndPassword(auth, data.email, data.password)

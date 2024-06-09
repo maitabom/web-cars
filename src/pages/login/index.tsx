@@ -24,7 +24,7 @@ function Login() {
 
   useEffect(() => {
     signOut(auth);
-  });
+  }, []);
 
   async function submitForm(data: FormDataLogin) {
     await signInWithEmailAndPassword(auth, data.email, data.password)
