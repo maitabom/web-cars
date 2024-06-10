@@ -29,8 +29,7 @@ function Dashboard() {
       const carsRef = collection(database, "cars");
       const queryRef = query(
         carsRef,
-        where("userID", "==", user?.uid),
-        orderBy("created", "desc")
+        where("userID", "==", user?.uid)
       );
 
       await getDocs(queryRef).then((snapshot) => {

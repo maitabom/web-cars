@@ -8,8 +8,10 @@ interface Car {
   price: number;
   city: string;
   mileage: number;
+  model?: string;
   description?: string;
-  owner?: string
+  owner?: string;
+  whatsapp?: string;
   images: ImageCar[];
 }
 
